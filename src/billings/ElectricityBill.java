@@ -39,7 +39,7 @@ public class ElectricityBill {
 		previousmonthreading=sc.nextLong();
 		System.out.print("Enter the Current Month Reading");
 		currentmonthreading=sc.nextLong();
-		System.out.print("Enter the Customer type (Domestic,Commercial");
+		System.out.print("Enter the Customer type (Domestic,Commercial)");
 		customertype=sc.next();
 	}
 	public void printData()
