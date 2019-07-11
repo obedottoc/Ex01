@@ -13,7 +13,7 @@ public class ElectricityBill {
 	public ElectricityBill()
 	{
 		this.customernumber=1000;
-		this.customername="unknown";
+		this.customername="gk";
 		this.previousmonthreading=10;
 		this.currentmonthreading=12;
 		this.customertype="domestic";
@@ -34,7 +34,7 @@ public class ElectricityBill {
 		System.out.print("\nEnter the customer number:");
 		this.customernumber=sc.nextLong();
 		System.out.print("Enter the customer name:");
-		customername= sc.next();
+		this.customername= sc.next();
 		System.out.print("Enter the Previous Month Reading");
 		previousmonthreading=sc.nextLong();
 		System.out.print("Enter the Current Month Reading");
@@ -44,8 +44,8 @@ public class ElectricityBill {
 	}
 	public void printData()
 	{
-		System.out.printf("Customer Number:"+customernumber,"CustomerName:"+customername);
-		System.out.print("PreviousMonthReading:"+previousmonthreading+"CurrentMonthReading:"+currentmonthreading+"Customer Type:"+customertype);
+		System.out.print("Customer Number:"+customernumber+"   "+"CustomerName:"+customername+"   ");
+		System.out.print("PreviousMonthReading:"+previousmonthreading+"   "+"CurrentMonthReading:"+currentmonthreading+"   "+"Customer Type:"+customertype);
 	}
 	public void computeBillamount()
 	{
