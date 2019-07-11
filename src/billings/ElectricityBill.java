@@ -68,7 +68,7 @@ public class ElectricityBill {
 		
 	}
 	/***
-	 * to the total amount
+	 * to get the total amount
 	 */
 	public void computeBillAmount()
 	{
@@ -109,7 +109,7 @@ public class ElectricityBill {
 			}			
 		}	
 		System.out.print("\n"+divider+"\n");
-		System.out.printf("%40s", "SALE BILL");
+		System.out.printf("%40s", "Electricity BILL");
 		System.out.print("\n"+divider+"\n");
 		this.printData();
 		System.out.printf("%29s%8.2f Rs", "Total Amount:",totalAmount);
