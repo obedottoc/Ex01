@@ -29,7 +29,7 @@ public class ElectricityBill {
 	 * @param type
 	 * @param qty
 	 */
-		public ElectricityBill(long number,String name,double reading,String type,int qty)
+		public ElectricityBill(long number,String name,double preading,double creading,String type)
 		{
 			this.consumernumber=number;
 			this.consumername=name;
@@ -56,16 +56,67 @@ public void getData()
 	currentmonthreading=sc.nextDouble();
 	System.out.println("Enter the consumer type (commerical or dometic):");
 	type=sc.next();
-}																																									}
+																																									}
 	
 /*****
- * To print the bill details
+ * To calculate the bill amount
  */
 public void printData()
 {
 	System.out.printf("%-40s%40s\n", "Consumer Number:"+consumernumber,"Consumer Name:"+consumername);
-	System.out.printf("%s%8.2f %-16s %40s\n", "previousmonthreading:","Watts",type:"+consumertype);
-	System.out.printf("%-40s", "Number LED lamps:"+quantity);
+	System.out.printf("%s%fwatts  %s%f%s\n","previousmonthreading",previousmonthreading,"currentmonthreading:",currentmonthreading,"watts");
+	System.out.printf("%-40s", "consumertype"+type);
 }
+	/***
+	 * To calculate the bill amount
+	 */
+	public void computeBillAmount()
+	{
+		double totalAmount=-1;
+		String divider="---------------------------------------------------------------------------------";
+		double unitsconsumed;
+		
+		unitsconsumed=currentmonthreading-previousmonthreading;
+		
+	     if(type.equals("domestic"))
+		{
+			if((unitsconsumed>=0)&& (unitsconsumed<100))
+			{
+				totalAmount=unitsconsumed*1.0;
+			}else if((unitsconsumed>=101)&&(unitsconsumed<=200))
+			{
+				totalAmount=unitsconsumed*2.50;
+			}else if((unitsconsumed>=201)&&(unitsconsumed<=500))
+			{
+				totalAmount=unitsconsumed*4.0;
+			}else
+			{
+				totalAmount=unitsconsumed*6.0;
+			}
+		}else if(type.equals("vendor"))
+		{
+			if((unitsconsumed>=0)&& (unitsconsumed<=100))
+			{
+				totalAmount=unitsconsumed*2.0;
+			}else if((unitsconsumed>=101)&&(unitsconsumed<=200))
+			{
+				totalAmount=unitsconsumed*4.50;
+			}else if((unitsconsumed>=201)&&(unitsconsumed<=500))
+			{
+				totalAmount=unitsconsumed*6.0;
+			}else
+			{
+				totalAmount=unitsconsumed*7.0;
+			}			
+		}	
+		System.out.print("\n"+divider+"\n");
+		System.out.printf("%40s", "Electricity BILL");
+		System.out.print("\n"+divider+"\n");
+		this.printData();
+		System.out.printf("%29s%8.2f Rs", "Total Amount:",totalAmount);
+		System.out.print("\n"+divider+"\n");
+	}
+}
+
 
 	
