@@ -63,7 +63,7 @@ public void getData()
 public void printData()
 {
 System.out.printf("%-40s%40s\n", "Consumer Number:"+consumernumber,"ConsumerName:"+consumername);
-System.out.printf("%s%8.2f %-16s %40s\n", "Previousmonthreading:"+previousmonthreading,"watts","currentmonthreading:",+currentmonthreading,"watts");
+System.out.printf("%s%fwatts    %s%f%s\n", "Previousmonthreading:",previousmonthreading,"currentmonthreading:",+currentmonthreading,"watts");
 System.out.printf("%-40s","consumertype"+consumertype);
 
 }
@@ -73,46 +73,49 @@ System.out.printf("%-40s","consumertype"+consumertype);
 public void computeBillAmount()
 {
 	double totalAmount=-1;
-	double unitsconsumed;
+	double unitsconsumed=currentmonthreading-previousmonthreading;
 	String divider="---------------------------------------------------------------------------------";
 	
-	unitsconsumed=
+
 	if(consumertype.equals("domestic"))
+	{
+		if((unitsconsumed>=0)&&(unitsconsumed<=100))
+			{
+				totalAmount=unitsconsumed*1.0;
+			}else if((unitsconsumed>=101)&&(unitsconsumed<=200))
+				{
+				totalAmount=unitsconsumed*2.50;
+				}else if((unitsconsumed>=201)&&(unitsconsumed<=500))
+				{
+					totalAmount=unitsconsumed*4.0;
+				}else
+				{
+			totalAmount=unitsconsumed*6.0;
+				}
+		}
+	
+	else if(consumertype.equals("commerical"))
 	{
 		if((unitsconsumed>=0)&& (unitsconsumed<=100))
 		{
-			totalAmount=unit*250.0;
-		}else if((quantity>=6)&&(quantity<=10))
+			totalAmount=unitsconsumed*2.0;
+		}else if((unitsconsumed>=101)&&(unitsconsumed<=200))
 		{
-			totalAmount=quantity*230.0;
-		}else if((quantity>=11)&&(quantity<=15))
+			totalAmount*=unitsconsumed*4.50;
+		}else if((unitsconsumed>=201)&&(unitsconsumed<=500))
 		{
-			totalAmount=quantity*215.0;
+			totalAmount=unitsconsumed*6.0;
 		}else
 		{
-			totalAmount=quantity*200.0;
-		}
-	}else if(consumertype.equals("commerical"))
-	{
-		if((quantity>=0)&& (quantity<=5))
-		{
-			totalAmount=quantity*230.0;
-		}else if((quantity>=6)&&(quantity<=10))
-		{
-			totalAmount=quantity*210.0;
-		}else if((quantity>=11)&&(quantity<=15))
-		{
-			totalAmount=quantity*195.0;
-		}else
-		{
-			totalAmount=quantity*180.0;
+			totalAmount=unitsconsumed*7.0;
 		}			
-	}	
+	}
 	System.out.print("\n"+divider+"\n");
-	System.out.printf("%40s", "SALE BILL");
+	System.out.printf("%40s", "electricitybill");
 	System.out.print("\n"+divider+"\n");
 	this.printData();
 	System.out.printf("%29s%8.2f Rs", "Total Amount:",totalAmount);
 	System.out.print("\n"+divider+"\n");
-}
-}
+
+	}
+	}
