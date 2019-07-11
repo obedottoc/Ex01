@@ -2,9 +2,9 @@
  * To calculate the ElectricityBill amount 
  * 
  * Developed by
- * C.Obed otto
+ * maniknta
  * 
- * obedotto@saveetha.ac.in
+ * amanikanta69@gmail.com
  * 
  */
 package electricitybill;
