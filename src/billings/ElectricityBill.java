@@ -1,25 +1,26 @@
 package billings;
 
-import java.util.scanner;
+import java.util.Scanner;
 
 public class ElectricityBill {
 	private long consumernumber;
 	private String consumername;
 	private double previousmonthreading;
-	private double currentmonthreading ;
-	private string consumertype;
+	private double currentmonthreading;
+	private String consumertype;
 	
 	/***
-	 * To create ElecticityBill with initial values
+	 * To create Electricitybill with initial values
 	 */
-public ElectricityBill()
-{
+	public ElectricityBill()
+	{
 		this.consumernumber=5500;
 		this.consumername="Agnal";
 		this.previousmonthreading=1500;
 		this.currentmonthreading=2500;
-		this."consumertype"="domestic";
-}
+		this.consumertype="domestic";
+	}
+	
 /***
  * 
  * @param number
@@ -27,133 +28,94 @@ public ElectricityBill()
  * @param preading
  * @param creading
  * @param type
-	*/
-public ElectricityBill(long number,String name,double preading,double creading,string type)
+ */
+public ElectricityBill(long number,String name,double preading,double creading,String type)
 {
-		this.consumernumber=number;
-		this.consumername=name;
-		this.previousmonthreading=preading;
-		this.currentmonthreading=creading;
-		this.consumertype=type;
+			this.consumernumber=number;
+			this.consumername=name;
+			this.previousmonthreading=preading;
+			this.currentmonthreading=creading;
+			this.consumertype=type;
 }
-	/**
-	* to get billing information 
-	*/
-public void getdata()
+   /**
+    * to get billing information from the 
+    */
+public void getData()
 {
-	Scanner sc=new scanner(system.in);
-	
+	Scanner sc=new Scanner(System.in);
 	
 	System.out.printf("\n%40s","BILLING INFORMATION");
 	System.out.print("\nEnter the consumer number:");
-	this.customernumber=sc.nextLong();
+	this.consumernumber=sc.nextLong();
 	System.out.print("Enter the consumer name:");
-	customername= sc.next();
+	consumername= sc.next();
 	System.out.print("Enter the previousmonthreading:");
-	powerrating=sc.nextDouble();
+	previousmonthreading=sc.nextDouble();
 	System.out.print("Enter the currentmonthreading:");
-	customertype=sc.next();
-	System.out.println("Enter the consumer type(commercial or domestic):");
-	consumertype=sc.nextInt();
+	currentmonthreading=sc.nextDouble();
+	System.out.println("enter the consumer type(commerical or domestic):");
+	consumertype=sc.next();
 	
-}	
+}
 /*****
- * To print the bill details	
+ * To print the bill details
  */
 public void printData()
 {
 System.out.printf("%-40s%40s\n", "Consumer Number:"+consumernumber,"ConsumerName:"+consumername);
-System.out.printf("%s%8.2f %-16s %40s\n", "Previousmonthreading:",previousmonthreading,"currentmonthreading:",+currentmonthreading);
-System.out.printf("%-40s", "consumertype:"+consumertype);
+System.out.printf("%s%fwatts    %s%f%s\n", "Previousmonthreading:",previousmonthreading,"currentmonthreading:",+currentmonthreading,"watts");
+System.out.printf("%-40s","consumertype"+consumertype);
 
 }
 /***
  * To calculate the bill amount
  */
-public void computeBillamount()
+public void computeBillAmount()
 {
 	double totalAmount=-1;
 	double unitsconsumed=currentmonthreading-previousmonthreading;
 	String divider="---------------------------------------------------------------------------------";
+	
 
-	if(customertype.equals("user"))
+	if(consumertype.equals("domestic"))
 	{
-		if((quantity>=0)&& (quantity<=5))
-		{
-			totalAmount=quantity*250.0;
-		}else if((quantity>=6)&&(quantity<=10))
-		{
-			totalAmount=quantity*230.0;
-		}else if((quantity>=11)&&(quantity<=15))
-		{
-			totalAmount=quantity*215.0;
-		}else
-		{
-			totalAmount=quantity*200.0;
+		if((unitsconsumed>=0)&&(unitsconsumed<=100))
+			{
+				totalAmount=unitsconsumed*1.0;
+			}else if((unitsconsumed>=101)&&(unitsconsumed<=200))
+				{
+				totalAmount=unitsconsumed*2.50;
+				}else if((unitsconsumed>=201)&&(unitsconsumed<=500))
+				{
+					totalAmount=unitsconsumed*4.0;
+				}else
+				{
+			totalAmount=unitsconsumed*6.0;
+				}
 		}
-	}else if(customertype.equals("vendor"))
+	
+	else if(consumertype.equals("commerical"))
 	{
-		if((quantity>=0)&& (quantity<=5))
+		if((unitsconsumed>=0)&& (unitsconsumed<=100))
 		{
-			totalAmount=quantity*230.0;
-		}else if((quantity>=6)&&(quantity<=10))
+			totalAmount=unitsconsumed*2.0;
+		}else if((unitsconsumed>=101)&&(unitsconsumed<=200))
 		{
-			totalAmount=quantity*210.0;
-		}else if((quantity>=11)&&(quantity<=15))
+			totalAmount*=unitsconsumed*4.50;
+		}else if((unitsconsumed>=201)&&(unitsconsumed<=500))
 		{
-			totalAmount=quantity*195.0;
+			totalAmount=unitsconsumed*6.0;
 		}else
 		{
-			totalAmount=quantity*180.0;
+			totalAmount=unitsconsumed*7.0;
 		}			
-}	
-System.out.print("\n"+divider+"\n");
-System.out.printf("%40s", "SALE BILL");
-System.out.print("\n"+divider+"\n");
-this.printData();
-System.out.printf("%29s%8.2f Rs", "Total Amount:",totalAmount);
-System.out.print("\n"+divider+"\n");
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	}
+	System.out.print("\n"+divider+"\n");
+	System.out.printf("%40s", "electricitybill");
+	System.out.print("\n"+divider+"\n");
+	this.printData();
+	System.out.printf("%29s%8.2f Rs", "Total Amount:",totalAmount);
+	System.out.print("\n"+divider+"\n");
+
+	}
 }
