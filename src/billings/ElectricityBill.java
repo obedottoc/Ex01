@@ -12,19 +12,19 @@ public class ElectricityBill {
 	
 	public ElectricityBill()
 	{
-		this.customernumber=1000;
-		this.customername="gk";
-		this.previousmonthreading=10;
-		this.currentmonthreading=12;
+		this.customernumber=50000;
+		this.customername="hari";
+		this.previousmonthreading=54;
+		this.currentmonthreading=35;
 		this.customertype="domestic";
 	}
 		
-	public ElectricityBill(long number,String name,long pmr,long cmr ,String type)
+	public ElectricityBill(long numbers,String name,long pm,long cm ,String type)
 	{
-		this.customernumber=number;
+		this.customernumber=numbers;
 		this.customername=name;
-		previousmonthreading=pmr;
-		currentmonthreading=cmr;
+		previousmonthreading=pm;
+		currentmonthreading=cm;
 		customertype=type;
 	}
 	public void getdata()
