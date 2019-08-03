@@ -5,7 +5,7 @@ import java.util.Scanner;
 /****
  * Class to represent ElectricityBill of LED Lamp
  * 
- * @author mohan raj
+ * @author sakthi
  *
  */
 public class ElectricityBill {
