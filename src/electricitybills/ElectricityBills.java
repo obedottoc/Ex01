@@ -13,7 +13,7 @@ public class ElectricityBills {
 	public ElectricityBills()
 	{
 		this.customernumber=1001;
-		this.customername="unknown";
+		this.customername="noname";
 		this.previousmonthreading=100;
 		this.currentmonthreading=120;
 		this.customertype="domestic";
