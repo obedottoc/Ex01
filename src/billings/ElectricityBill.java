@@ -14,7 +14,7 @@ public class ElectricityBill {
 public ElectricityBill()
 {
 	this.customer_number=1000;
-	this.customer_name="noname";
+	this.customer_name="name";
 	this.customer_type="domestic";
 	this.lastmonthreading=100;
 	this.currentmonthreading=0;
