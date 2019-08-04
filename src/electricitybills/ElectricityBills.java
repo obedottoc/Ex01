@@ -1,7 +1,7 @@
 //Experiment-01
 //created by
 //Rohitha korrapati
-package electricitybills;
+package electricitybills;a
 import java.util.Scanner;
 public class ElectricityBills {
 	private long customernumber;
