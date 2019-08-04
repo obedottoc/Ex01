@@ -1,4 +1,4 @@
-package electricitybills;a
+package electricitybills;
 
 public class Calculationforbillings {
 	
