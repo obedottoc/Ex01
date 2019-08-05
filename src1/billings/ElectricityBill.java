@@ -14,7 +14,7 @@ public class ElectricityBill {
  */
 public ElectricityBill()
 {
-	this.customernumber=1000;
+	this.customernumber=0;
 	this.customername="unknown";
 	this.previousmonthreading=0;
 	this.customertype="commercial";
@@ -65,8 +65,8 @@ public void getData()
 public void printData()
 {
 	System.out.printf("%-40s%40s\n", "Customer Number:"+customernumber,"CustomerName:"+customername);
-	System.out.printf("%s%8.2f %-16s %40s\n", "Reading:",previousmonthreading,"CustomerType:",customertype);
-	System.out.printf("%-40s", "Reading:"+currentmonthreading);
+	System.out.printf("%s%8.2f %-16s%40s\n", "previousReading:",previousmonthreading,"CustomerType:",customertype);
+	System.out.printf("%-40s", "currentReading:"+currentmonthreading);
 }
 
 /***
