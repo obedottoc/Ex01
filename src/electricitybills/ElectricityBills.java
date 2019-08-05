@@ -1,6 +1,6 @@
 /****
  * Program for Currency Converter
- * @author RAJAMANICKAM A
+ * @author Rositha V
  *  rajapandidevi1997@gmail.com
  */
 package electricitybills;
