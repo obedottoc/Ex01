@@ -1,6 +1,8 @@
-//Experiment-01
-//created by
-//Rohitha korrapati
+/****
+ * Program for Electricity Bills
+ * @author Pavan Kalyan
+ *  npkr.nvrr@outlook.com
+ */
 package electricitybills;
 import java.util.Scanner;
 public class ElectricityBills {
