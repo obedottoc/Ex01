@@ -1,3 +1,10 @@
+/****
+ * program to represent electricity bill
+ * developed mahesh k
+ * 
+ */
+
+
 package billings;
 
 public class Calculation1 {public static void main(String[] args) {
