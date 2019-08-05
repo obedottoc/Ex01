@@ -1,6 +1,11 @@
-//Experiment-01
-//created by
-//Rohitha korrapati
+/**
+1 * Application for area and length conversion
+ * 
+ * developed by suriyakumar
+ * sksuri01@gmail.com
+ * 212217105057
+
+ */
 package electricitybills;
 import java.util.Scanner;
 public class ElectricityBills {

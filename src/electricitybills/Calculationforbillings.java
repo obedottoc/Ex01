@@ -1,4 +1,11 @@
-package electricitybills;
+/**
+1 * electricity bill
+ * 
+ * developed by suriyakumar
+ * sksuri01@gmail.com
+ * 212217105057
+
+ */package electricitybills;
 
 public class Calculationforbillings {
 	
