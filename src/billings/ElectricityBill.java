@@ -13,7 +13,7 @@ import java.util.Scanner;
 /****
  * Class to represent generating of Electricity bill  
  * 
- * @author obedotto
+ * @author N.pavithra
  *
  */
 public class ElectricityBill {

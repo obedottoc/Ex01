@@ -2,9 +2,9 @@
  * To calculate the Sale bill amount 
  * 
  * Developed by
- * C.Obed otto
+ * N.pavithra
  * 
- * obedotto@saveetha.ac.in
+ * npavithra1405@gmail.com
  * 
  */
 package billings;
