@@ -1,6 +1,4 @@
-//Experiment-01
-//created by
-//gk81299
+//created by gk81299
 package billings;
 import java.util.Scanner;
 public class ElectricityBill {
@@ -33,13 +31,13 @@ public class ElectricityBill {
 		System.out.printf("\n%40s","BILLING INFORMATION");
 		System.out.print("\nEnter the customer number:");
 		this.customernumber=sc.nextLong();
-		System.out.print("Enter the customer name:");
+		System.out.println("Enter the customer name:");
 		this.customername= sc.next();
-		System.out.print("Enter the Previous Month Reading");
+		System.out.println("Enter the Previous Month Reading");
 		previousmonthreading=sc.nextLong();
-		System.out.print("Enter the Current Month Reading");
+		System.out.println("Enter the Current Month Reading");
 		currentmonthreading=sc.nextLong();
-		System.out.print("Enter the Customer type (Domestic,Commercial)");
+		System.out.println("Enter the Customer type (Domestic,Commercial)");
 		customertype=sc.next();
 	}
 	public void printData()
