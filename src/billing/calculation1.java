@@ -5,8 +5,8 @@ public class calculation1 {
 		ElectricityBill bill1,bill2;
 		
 		bill1=new ElectricityBill(2001,"aakash",10,12,"domestic");
-		bill1=printData();
 		bill2=new ElectricityBill();
+		bill1.printData();
 		bill2.getData();
 		bill1.computeBillAmount();
 		bill2.computeBillAmount();

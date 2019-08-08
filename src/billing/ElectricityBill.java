@@ -9,9 +9,6 @@ public class ElectricityBill {
 	private double previousmonthreading;
 	private double currentmonthreading;
 	private String consumertype;
-	/***
-	 * To create sale bill with initial values
-	 */
 	public ElectricityBill()
 	{
 		this.consumernumber=1000;
@@ -20,14 +17,7 @@ public class ElectricityBill {
 		this.currentmonthreading=25;
 		this.consumertype="domestic";
 	}
-	/***
-	 * 
-	 * @param number
-	 * @param name
-	 * @param rating
-	 * @param type
-	 * @param qty
-	 */
+	
 	public ElectricityBill(long number,String name,double preading,double creading,String type)
 	{
 		this.consumernumber=number;
@@ -36,9 +26,7 @@ public class ElectricityBill {
 		this.currentmonthreading=creading;
 		this.consumertype=type;
 	}
-	/**
-	 *to get the billing operation from the
-	 */
+	
 	
 	public void getData()
 	{
@@ -57,19 +45,18 @@ public class ElectricityBill {
 		
 		
 	}
-		/*****
-		 * To print the bill details
-		 */
+		
 		public void printData()
 		{
-			System.out.printf("%-40s%40s\n", "Customer Number:"+consumernumber,"CustomerName:"+consumername);
-			System.out.printf("%s%fwatts   %s%f%s\n",previousmonthreading,"Watts","CustomerType:"+consumertype);
+			System.out.printf("Customer Number:"+consumernumber,"CustomerName:"+consumername);
+			System.out.printf("previousmonthreading:"+previousmonthreading,"CustomerType:"+consumertype);
 			System.out.printf("%-40s", "consumertype"+consumertype);
 		}
 		public void computeBillAmount()
 		{
 			double totalAmount=-1;
-			String divider="---------------------------------------------------------------------------------";
+			String divider;
+			divider="-----------------------------------------------------------";
 			double unitsconsumed;
 			
 			unitsconsumed=currentmonthreading-previousmonthreading;
