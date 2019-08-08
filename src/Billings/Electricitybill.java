@@ -1,3 +1,8 @@
+// created by Akhshy Ganesh B
+// program for ELECTRICITY BILL
+// Mail ID : akhshyganeshb@gmail.com
+
+
 package Billings;
 
 import java.util.Scanner;
