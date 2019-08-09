@@ -1,5 +1,8 @@
+/**created by m.uday kanth, eee-B
+ * 
+ * 
+ */
 package Billings;
-
 public class Calculation1 {
 	public static void main(String[] args) {
 		ElectricityBill bill1,bill2;

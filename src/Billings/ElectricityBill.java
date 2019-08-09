@@ -1,11 +1,9 @@
+/***created by m.uday kanth, eee-B
+ *  
+ */
+
 package Billings;
 import java.util.Scanner;
-
-/**
- * Electricity bill
- * @author sumanth
- *
- */
 public class ElectricityBill {
 	private long customernumber;
 	private String customername;
@@ -35,10 +33,7 @@ public class ElectricityBill {
 		customertype=type;
 		
 	}
-	/**
-	 * to get bill information from the user
-	 */
-	public void getData()
+public void getData()
 	{
 		Scanner sc=new Scanner(System.in);
 		
