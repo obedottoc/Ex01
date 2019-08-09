@@ -10,7 +10,7 @@ package billings;
 public class Calculation1 {public static void main(String[] args) {
 	ElectricityBill bill1,bill2;
 	
-	bill1=new ElectricityBill(2001,"vijay",0, "Domestic",155);
+	bill1=new ElectricityBill(2001,"vijay",90, "Domestic",155);
 	bill1.printData();
 	bill2=new ElectricityBill();
 	bill2.getData();

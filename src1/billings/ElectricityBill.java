@@ -1,5 +1,5 @@
 /****
- * Program to represent elactricity bill
+ * Program to represent electricity bill
  * developed by
  * @author Mahesh K
  */
