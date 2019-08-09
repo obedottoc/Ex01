@@ -1,3 +1,11 @@
+/****
+ * Program to represent elactricity bill
+ * developed by
+ * @author Mahesh K
+ */
+
+
+
 package billings;
 
 import java.util.Scanner;
