@@ -1,6 +1,6 @@
 //Experiment-01
 //created by
-//gk81299
+//Hari
 package billings;
 import java.util.Scanner;
 public class ElectricityBill {
