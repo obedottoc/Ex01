@@ -23,6 +23,8 @@ public class ElectricityBill {
 	public void getdata()
 	{	Scanner sc= new Scanner(System.in);
 		System.out.printf("\n%40s","BILLING INFORMATION: ");
+		System.out.print("\nEnter the customer name: ");
+		this.customername=sc.next();
 		System.out.print("\nEnter the customer number: ");
 		this.customernumber=sc.nextLong();
 		System.out.print("\nEnter the customer type(domestic,commercial)");
@@ -49,9 +51,8 @@ public class ElectricityBill {
 				billAmount=unit*4.0;
 			else
 				billAmount=unit*6.0;
-			System.out.print("\n haha");
 		}
-		else if(customertype.contentEquals("Commercial"))
+		else if(customertype.contentEquals("commercial"))
 		{	if((unit>=0)&&(unit<=100))
 				billAmount=unit*2.0;
 			else if((unit>=101)&&(unit<=200))
@@ -61,11 +62,11 @@ public class ElectricityBill {
 			else
 				billAmount=unit*7.0;
 		}
-		System.out.print("\n"+spacing+"\n");
+		System.out.printf("\n"+spacing+"\n");
 		System.out.print("SALE BILL");
 		System.out.print("\n"+spacing+"\n");
-		this.printData();
-		System.out.printf("\nBill Amount: ",billAmount);
+		printData();
+		System.out.printf("\nBill Amount: "+billAmount);
 		System.out.print("\n"+spacing+"\n");
 	}
 }
