@@ -1,7 +1,8 @@
 /****
+
  * Program for Currency Converter
  * @author Rositha V
- *  rajapandidevi1997@gmail.com
+ *  rosithav1@gmail.com
  */
 package electricitybills;
 import java.util.Scanner;
