@@ -5,7 +5,7 @@ import java.util.Scanner;
 /****
  * Class to represent ElectricityBill of LED Lamp
  * 
- * @author nihkil
+ * @author santhosh
  *
  */
 public class ElectricityBill {
@@ -78,33 +78,33 @@ public class ElectricityBill {
 		
 		if(customertype.equals("user"))
 		{
-			if((unitsconsumed>=0)&&(unitsconsumed<=5))
+			if((unitsconsumed>=0)&&(unitsconsumed<=100))
 			{
-				totalAmount=unitsconsumed*250.0;
-			}else if((unitsconsumed>=6)&&(unitsconsumed<=10))
+				totalAmount=unitsconsumed*2.0;
+			}else if((unitsconsumed>=101)&&(unitsconsumed<=200))
 			{
-				totalAmount=unitsconsumed*230.0;
-			}else if((unitsconsumed>=11)&&(unitsconsumed<=15))
+				totalAmount=unitsconsumed*4.80;
+			}else if((unitsconsumed>=201)&&(unitsconsumed<=500))
 			{
-				totalAmount=unitsconsumed*215.0;
+				totalAmount=unitsconsumed*6.0;
 			}else
 			{
-				totalAmount=unitsconsumed*200.0;
+				totalAmount=unitsconsumed*7.0;
 			}
-		}else if(customertype.equals("vendor"))
+		}else if(customertype.equals("domestic"))
 		{
-			if((unitsconsumed>=0)&& (unitsconsumed<=5))
+			if((unitsconsumed>=0)&& (unitsconsumed<=100))
 			{
-				totalAmount=unitsconsumed*230.0;
-			}else if((unitsconsumed>=6)&&(unitsconsumed<=10))
+				totalAmount=unitsconsumed*1.0;
+			}else if((unitsconsumed>=101)&&(unitsconsumed<=200))
 			{
-				totalAmount=unitsconsumed*210.0;
-			}else if((unitsconsumed>=11)&&(unitsconsumed<=15))
+				totalAmount=unitsconsumed*2.5;
+			}else if((unitsconsumed>=201)&&(unitsconsumed<=500))
 			{
-				totalAmount=unitsconsumed*195.0;
+				totalAmount=unitsconsumed*4.0;
 			}else
 			{
-				totalAmount=unitsconsumed*180.0;
+				totalAmount=unitsconsumed*6.0;
 			}			
 		}	
 		System.out.print("\n"+divider+"\n");
