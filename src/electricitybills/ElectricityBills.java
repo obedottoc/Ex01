@@ -1,6 +1,9 @@
-//Experiment-01
-//created by
-//Sugumar
+/***
+* EXPERIMENT-01
+*developed by Nithishkumar
+*Saveetha Engineering College
+*jpnithishkumar@gmail.com
+*/
 package electricitybills;
 import java.util.Scanner;
 public class ElectricityBills {

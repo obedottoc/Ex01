@@ -1,3 +1,9 @@
+/***
+* EXPERIMENT-01
+*developed by Nithishkumar
+*Saveetha Engineering College
+*jpnithishkumar@gmail.com
+*/
 package electricitybills;
 
 public class Calculationforbillings {
