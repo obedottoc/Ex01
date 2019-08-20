@@ -2,8 +2,7 @@ package billings;
 
 public class Calculation1 {
 	public static void main(String[] args) {
-		ElectricityBill bill1,bill2;
-		
+		ElectricityBill bill1,bill2;	
 		bill1=new ElectricityBill(2001,"Kamal",0,0,"Domestic");
 		bill1.printData();
 		bill2=new ElectricityBill();

@@ -3,7 +3,7 @@ import java.util.Scanner;
 import java.util.Scanner;
 /**
  * Electricity bill
- * @author maahi
+ * @author rohitha
  *
  */
 public class ElectricityBill {
