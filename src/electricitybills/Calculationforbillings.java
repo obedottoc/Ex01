@@ -2,7 +2,7 @@ package electricitybills;
 
 public class Calculationforbillings {
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) {s
 		// TODO Auto-generated method stub
 		ElectricityBills E1,E2;
 		E1=new ElectricityBills(1001,"Arun",90,110,"Domestic");
