@@ -2,7 +2,7 @@
 //created by
 //Rohitha korrapati
 package electricitybills;
-import java.util.Scanner;s
+import java.util.Scanner;
 public class ElectricityBills {
 	private long customernumber;
 	private String customername;
