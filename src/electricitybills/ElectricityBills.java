@@ -5,7 +5,7 @@
 *jpnithishkumar@gmail.com
 */
 package electricitybills;
-import java.util.Scanner;
+import java.util.Scanner;s
 public class ElectricityBills {
 	private long customernumber;
 	private String customername;
