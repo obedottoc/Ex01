@@ -4,7 +4,7 @@
 *Saveetha Engineering College
 *jpnithishkumar@gmail.com
 */
-package electricitybills;
+package electricitybills;s
 
 public class Calculationforbillings {
 	
