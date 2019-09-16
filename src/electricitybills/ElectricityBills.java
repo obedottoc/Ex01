@@ -4,7 +4,7 @@
 *Saveetha Engineering College
 *jpnithishkumar@gmail.com
 */
-package electricitybills;s
+package electricitybills;
 import java.util.Scanner;
 public class ElectricityBills {
 	private long customernumber;
