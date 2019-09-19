@@ -1,3 +1,6 @@
+/*created by: G. Sanjai Kumar
+ * email: gsanjaik@gmail.com
+ */
 package billings;
 import java.util.Scanner;
 public class ElectricityBill {

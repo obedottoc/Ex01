@@ -1,5 +1,7 @@
+/*created by: G. Sanjai Kumar
+ * email: gsanjaik@gmail.com
+ */
 package billings;
-
 public class Calculations1 {
 
 	public static void main(String[] args) {
