@@ -1,3 +1,8 @@
+/***
+ *lokesh
+ * lokeshwarn2000@gmail.com
+ * exp 1
+ */
 package billings;
 
 import java.util.Scanner;
@@ -22,12 +27,10 @@ public class ElectricityBill {
 	}
 	
 /***
- * 
- * @param number
- * @param name
- * @param preading
- * @param creading
- * @param type
+ * lokesh
+ * lokeshwarn2000@gmail.com
+ * exp1
+ 
  */
 public ElectricityBill(long number,String name,double preading,double creading,String type)
 {

@@ -1,12 +1,8 @@
-/******
-	 * To calculate the electricitybill amount 
-	 * 
-	 * Developed by
-	 * LOKESH J
-	 * 
-	 *
-	 * 
-	 */
+/***
+ * lokesh
+ * lokeshwarn2000@gmail.com
+ * exp1
+ */
 	package billings;
 
 	public class calculation1 {
