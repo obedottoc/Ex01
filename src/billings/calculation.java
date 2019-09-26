@@ -1,5 +1,4 @@
 package billings;
-
 public class calculation {
 	public static void main(String[]args) {
 		ElectricityBill B1,B2;

@@ -1,3 +1,8 @@
+/*
+ * Program to perform ElectricityBill
+ * By Faizul
+ * faizulsmart10@gmail.com
+ */
 package billings;
 
 import java.util.Scanner;
