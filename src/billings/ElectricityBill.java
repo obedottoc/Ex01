@@ -1,4 +1,7 @@
-//created by gk81299
+/*created by kaarthikeyan
+ * email:gk81299@gmail.com
+ * 
+ */
 package billings;
 import java.util.Scanner;
 public class ElectricityBill {
