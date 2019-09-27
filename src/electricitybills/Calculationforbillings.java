@@ -1,3 +1,11 @@
+/****
+ * Program for electricity bills
+ * devloped by Mari bhagavathi.T
+ * mari36mars@gmail.com
+ */
+
+
+
 package electricitybills;
 
 public class Calculationforbillings {
