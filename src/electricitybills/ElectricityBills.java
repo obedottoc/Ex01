@@ -1,6 +1,9 @@
 //Experiment-01
+
 //created by
-//Rohitha korrapati
+//u.tamilselvan 
+//saveetha engineering college 
+//tamilfreakz002@gmail.com
 package electricitybills;
 import java.util.Scanner;
 public class ElectricityBills {
