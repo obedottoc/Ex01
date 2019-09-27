@@ -1,5 +1,5 @@
 /**
- * Application for area and length conversion
+ * Application for currency converter
  * 
  * developed by Mohan Raj c
  * cvmohanraj3 2gmail.com
