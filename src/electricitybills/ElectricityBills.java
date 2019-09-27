@@ -1,6 +1,6 @@
 //Experiment-01
 //created by
-//Rohitha korrapati
+//gurusaibabu
 package electricitybills;
 import java.util.Scanner;
 public class ElectricityBills {
